@@ -20,5 +20,6 @@ public class TestMaximum<T extends Comparable<T>> {
     }
     public static void main(String[] args) {
         new TestMaximum<>(10,30,20);
+        new TestMaximum<>(20.23,23.22,10.2);
     }
 }
