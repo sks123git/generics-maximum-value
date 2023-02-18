@@ -15,8 +15,11 @@ public class TestMaximum<T extends Comparable<T>> {
         if (value3.compareTo(max)>0){
             max=value3;
         }
-        System.out.println("Max of ("+value1+", "+value2+", "+value3+") is "+max);
+        printMax(value1,value2,value3,max);
         return max;
+    }
+    public static <T> void printMax(T value1,T value2,T value3,T max){
+        System.out.println("Max of ("+value1+", "+value2+", "+value3+") is "+max);
     }
     public static void main(String[] args) {
         new TestMaximum<>(10,30,20);        //integer value
